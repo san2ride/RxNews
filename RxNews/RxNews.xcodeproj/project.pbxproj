@@ -12,9 +12,12 @@
 		ADF7690322D51337006ECF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF7690222D51337006ECF1E /* Assets.xcassets */; };
 		ADF7690622D51337006ECF1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF7690422D51337006ECF1E /* LaunchScreen.storyboard */; };
 		ADF7691022D51496006ECF1E /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF7690F22D51496006ECF1E /* NewsController.swift */; };
+		CE5C61041A23B539FEF24479 /* Pods_RxNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2822582021DFF1647DC72360 /* Pods_RxNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2822582021DFF1647DC72360 /* Pods_RxNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A162C8F94F42C08A86264004 /* Pods-RxNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNews/Pods-RxNews.release.xcconfig"; sourceTree = "<group>"; };
 		ADF768F822D5132C006ECF1E /* RxNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF768FB22D5132C006ECF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF7690022D5132C006ECF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		ADF7690522D51337006ECF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF7690722D51337006ECF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF7690F22D51496006ECF1E /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		AFAD3FC45113148A5EE70D13 /* Pods-RxNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNews/Pods-RxNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C61041A23B539FEF24479 /* Pods_RxNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06E636E2E0075E0E8AC5F52E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2822582021DFF1647DC72360 /* Pods_RxNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADF768EF22D5132C006ECF1E = {
 			isa = PBXGroup;
 			children = (
 				ADF768FA22D5132C006ECF1E /* RxNews */,
 				ADF768F922D5132C006ECF1E /* Products */,
+				EB9B3E739CD999BBCDA0C4CD /* Pods */,
+				06E636E2E0075E0E8AC5F52E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +95,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB9B3E739CD999BBCDA0C4CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD3FC45113148A5EE70D13 /* Pods-RxNews.debug.xcconfig */,
+				A162C8F94F42C08A86264004 /* Pods-RxNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADF7690A22D51337006ECF1E /* Build configuration list for PBXNativeTarget "RxNews" */;
 			buildPhases = (
+				23CF1E0E314F2E4CD385A75B /* [CP] Check Pods Manifest.lock */,
 				ADF768F422D5132C006ECF1E /* Sources */,
 				ADF768F522D5132C006ECF1E /* Frameworks */,
 				ADF768F622D5132C006ECF1E /* Resources */,
+				69E657AC96F016BCAFAF7C41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +171,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23CF1E0E314F2E4CD385A75B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69E657AC96F016BCAFAF7C41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxNews/Pods-RxNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNews/Pods-RxNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADF768F422D5132C006ECF1E /* Sources */ = {
@@ -296,6 +363,7 @@
 		};
 		ADF7690B22D51337006ECF1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAD3FC45113148A5EE70D13 /* Pods-RxNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +382,7 @@
 		};
 		ADF7690C22D51337006ECF1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A162C8F94F42C08A86264004 /* Pods-RxNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
