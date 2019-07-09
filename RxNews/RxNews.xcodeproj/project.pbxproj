@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADDB097B22D5296900399B4D /* NewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB097A22D5296900399B4D /* NewsApi.swift */; };
 		ADF768FC22D5132C006ECF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF768FB22D5132C006ECF1E /* AppDelegate.swift */; };
 		ADF7690122D5132C006ECF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF768FF22D5132C006ECF1E /* Main.storyboard */; };
 		ADF7690322D51337006ECF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF7690222D51337006ECF1E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		2822582021DFF1647DC72360 /* Pods_RxNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A162C8F94F42C08A86264004 /* Pods-RxNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNews/Pods-RxNews.release.xcconfig"; sourceTree = "<group>"; };
+		ADDB097A22D5296900399B4D /* NewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApi.swift; sourceTree = "<group>"; };
 		ADF768F822D5132C006ECF1E /* RxNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF768FB22D5132C006ECF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF7690022D5132C006ECF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				ADF7690F22D51496006ECF1E /* NewsController.swift */,
 				ADF7690D22D51469006ECF1E /* storyboard */,
 				ADF7690E22D51474006ECF1E /* Supporting Files */,
+				ADDB097A22D5296900399B4D /* NewsApi.swift */,
 			);
 			path = RxNews;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF7691022D51496006ECF1E /* NewsController.swift in Sources */,
+				ADDB097B22D5296900399B4D /* NewsApi.swift in Sources */,
 				ADF768FC22D5132C006ECF1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
