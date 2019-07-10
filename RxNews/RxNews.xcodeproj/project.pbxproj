@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1177F922D578E0004B1018 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1177F822D578E0004B1018 /* Article.swift */; };
+		AD1177FC22D58122004B1018 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1177FB22D58122004B1018 /* ArticleCell.swift */; };
+		AD1177FF22D588E1004B1018 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1177FE22D588E1004B1018 /* URLRequest+Extensions.swift */; };
 		ADDB097B22D5296900399B4D /* NewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDB097A22D5296900399B4D /* NewsApi.swift */; };
 		ADF768FC22D5132C006ECF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF768FB22D5132C006ECF1E /* AppDelegate.swift */; };
 		ADF7690122D5132C006ECF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF768FF22D5132C006ECF1E /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		2822582021DFF1647DC72360 /* Pods_RxNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A162C8F94F42C08A86264004 /* Pods-RxNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNews/Pods-RxNews.release.xcconfig"; sourceTree = "<group>"; };
+		AD1177F822D578E0004B1018 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		AD1177FB22D58122004B1018 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		AD1177FE22D588E1004B1018 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		ADDB097A22D5296900399B4D /* NewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApi.swift; sourceTree = "<group>"; };
 		ADF768F822D5132C006ECF1E /* RxNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF768FB22D5132C006ECF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD1177F722D578BE004B1018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD1177F822D578E0004B1018 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD1177FA22D58091004B1018 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD1177FB22D58122004B1018 /* ArticleCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AD1177FD22D588B6004B1018 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD1177FE22D588E1004B1018 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ADF768EF22D5132C006ECF1E = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +101,9 @@
 		ADF768FA22D5132C006ECF1E /* RxNews */ = {
 			isa = PBXGroup;
 			children = (
+				AD1177FD22D588B6004B1018 /* Extensions */,
+				AD1177FA22D58091004B1018 /* Cells */,
+				AD1177F722D578BE004B1018 /* Model */,
 				ADF768FB22D5132C006ECF1E /* AppDelegate.swift */,
 				ADF7690F22D51496006ECF1E /* NewsController.swift */,
 				ADF7690D22D51469006ECF1E /* storyboard */,
@@ -221,8 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1177F922D578E0004B1018 /* Article.swift in Sources */,
 				ADF7691022D51496006ECF1E /* NewsController.swift in Sources */,
 				ADDB097B22D5296900399B4D /* NewsApi.swift in Sources */,
+				AD1177FF22D588E1004B1018 /* URLRequest+Extensions.swift in Sources */,
+				AD1177FC22D58122004B1018 /* ArticleCell.swift in Sources */,
 				ADF768FC22D5132C006ECF1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
