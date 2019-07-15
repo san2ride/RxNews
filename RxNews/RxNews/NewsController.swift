@@ -14,6 +14,7 @@ import RxCocoa
 class NewsController: UITableViewController {
     
     let bag = DisposeBag()
+    private var articleListVM: ArticleListViewModel!
     
     private var articles = [Article]()
     
@@ -49,6 +50,17 @@ class NewsController: UITableViewController {
         //let resource = Resource<ArticlesList>(url: url)
         
         URLRequest.load(resource: ArticlesList.all)
+            /*
+            .subscribe(onNext: { articleResponse in
+                let articles = articleResponse?.articles
+                self.articleListVM = ArticleListViewModel(articles)
+                
+                
+                
+            }).disposed(by: bag)
+            */
+        
+            
             .subscribe(onNext: { [weak self] result in
                 if let result = result {
                     self?.articles = result.articles
