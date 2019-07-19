@@ -34,8 +34,6 @@ struct ArticleViewModel {
     init(_ article: Article) {
         self.article = article
     }
-    
-    
 }
 
 extension ArticleViewModel {
@@ -47,6 +45,4 @@ extension ArticleViewModel {
     var description: Observable<String> {
         return Observable<String>.just(article.description ?? "")
     }
-    
-    
 }

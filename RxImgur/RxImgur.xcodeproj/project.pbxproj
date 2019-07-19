@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADA4A40022E24367001147EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4A3FF22E24367001147EE /* AppDelegate.swift */; };
+		ADA4A40522E24367001147EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA4A40322E24367001147EE /* Main.storyboard */; };
+		ADA4A40722E2436C001147EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA4A40622E2436C001147EE /* Assets.xcassets */; };
+		ADA4A40A22E2436C001147EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA4A40822E2436C001147EE /* LaunchScreen.storyboard */; };
+		ADA4A41422E245C5001147EE /* ImgurViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4A41322E245C5001147EE /* ImgurViewCell.swift */; };
+		ADA4A41922E246FE001147EE /* ImgurController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4A41822E246FE001147EE /* ImgurController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ADA4A3FC22E24367001147EE /* RxImgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxImgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA4A3FF22E24367001147EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADA4A40422E24367001147EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA4A40622E2436C001147EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA4A40922E2436C001147EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA4A40B22E2436C001147EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA4A41322E245C5001147EE /* ImgurViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurViewCell.swift; sourceTree = "<group>"; };
+		ADA4A41822E246FE001147EE /* ImgurController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA4A3F922E24367001147EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA4A3F322E24367001147EE = {
+			isa = PBXGroup;
+			children = (
+				ADA4A3FE22E24367001147EE /* RxImgur */,
+				ADA4A3FD22E24367001147EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA4A3FD22E24367001147EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A3FC22E24367001147EE /* RxImgur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA4A3FE22E24367001147EE /* RxImgur */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A41722E246CE001147EE /* Controller */,
+				ADA4A41622E245D9001147EE /* Model */,
+				ADA4A3FF22E24367001147EE /* AppDelegate.swift */,
+				ADA4A41522E245CC001147EE /* Cell */,
+				ADA4A41222E2459A001147EE /* Storyboard */,
+				ADA4A41122E243C1001147EE /* Supporting Files */,
+			);
+			path = RxImgur;
+			sourceTree = "<group>";
+		};
+		ADA4A41122E243C1001147EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A40622E2436C001147EE /* Assets.xcassets */,
+				ADA4A40B22E2436C001147EE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADA4A41222E2459A001147EE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A40322E24367001147EE /* Main.storyboard */,
+				ADA4A40822E2436C001147EE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ADA4A41522E245CC001147EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A41322E245C5001147EE /* ImgurViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ADA4A41622E245D9001147EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADA4A41722E246CE001147EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4A41822E246FE001147EE /* ImgurController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA4A3FB22E24367001147EE /* RxImgur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA4A40E22E2436C001147EE /* Build configuration list for PBXNativeTarget "RxImgur" */;
+			buildPhases = (
+				ADA4A3F822E24367001147EE /* Sources */,
+				ADA4A3F922E24367001147EE /* Frameworks */,
+				ADA4A3FA22E24367001147EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxImgur;
+			productName = RxImgur;
+			productReference = ADA4A3FC22E24367001147EE /* RxImgur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA4A3F422E24367001147EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jason Sanchez";
+				TargetAttributes = {
+					ADA4A3FB22E24367001147EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = ADA4A3F722E24367001147EE /* Build configuration list for PBXProject "RxImgur" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA4A3F322E24367001147EE;
+			productRefGroup = ADA4A3FD22E24367001147EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA4A3FB22E24367001147EE /* RxImgur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA4A3FA22E24367001147EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA4A40A22E2436C001147EE /* LaunchScreen.storyboard in Resources */,
+				ADA4A40722E2436C001147EE /* Assets.xcassets in Resources */,
+				ADA4A40522E24367001147EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA4A3F822E24367001147EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA4A40022E24367001147EE /* AppDelegate.swift in Sources */,
+				ADA4A41922E246FE001147EE /* ImgurController.swift in Sources */,
+				ADA4A41422E245C5001147EE /* ImgurViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADA4A40322E24367001147EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA4A40422E24367001147EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA4A40822E2436C001147EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA4A40922E2436C001147EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA4A40C22E2436C001147EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADA4A40D22E2436C001147EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA4A40F22E2436C001147EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = RxImgur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trvl.RxImgur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA4A41022E2436C001147EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = RxImgur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.trvl.RxImgur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA4A3F722E24367001147EE /* Build configuration list for PBXProject "RxImgur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA4A40C22E2436C001147EE /* Debug */,
+				ADA4A40D22E2436C001147EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA4A40E22E2436C001147EE /* Build configuration list for PBXNativeTarget "RxImgur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA4A40F22E2436C001147EE /* Debug */,
+				ADA4A41022E2436C001147EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA4A3F422E24367001147EE /* Project object */;
+}
